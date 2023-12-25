@@ -1,0 +1,12 @@
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+.selector {
+  font-weight: map-get($font-weights, "medium");
+  font-family: map-keys($font-weights);
+  font-weight: map-values($font-weights);
+  font-weight: map-has-key($font-weights, "bold");
+}

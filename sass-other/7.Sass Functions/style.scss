@@ -1,0 +1,7 @@
+$list: 20px 10px 40px;
+
+.selector {
+  padding: length($list);
+  margin: nth($list, 2);
+  padding: set-nth($list, 3, 15rem);
+}

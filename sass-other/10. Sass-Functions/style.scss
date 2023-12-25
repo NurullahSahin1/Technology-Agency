@@ -1,0 +1,29 @@
+// $font-weights: (
+//   "regular": 400,
+//   "medium": 500,
+//   "bold": 700,
+// );
+
+// .selector {
+//   font-weight: map-get($font-weights, "medium");
+//   font-family: map-keys($font-weights);
+//   font-weight: map-values($font-weights);
+//   font-weight: map-has-key($font-weights, "bold");
+// }
+
+$one: 100px;
+$two: 100px;
+
+@function add($numberOne, $numberTwo) {
+  @return $numberOne + $numberTwo;
+}
+
+@function randomColor() {
+  @return rgb(random(255), random(255), random(255));
+}
+
+section {
+  width: add(100, 270) * 1px;
+  height: add(270, 100) * 1px;
+  background: randomColor();
+}
